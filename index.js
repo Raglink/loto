@@ -1,4 +1,4 @@
-const listOfLotoGrids = (numberOfGrids) =>{
+
     // All constants
     const countNumber = 5
     const minNumber =1
@@ -25,6 +25,7 @@ const listOfLotoGrids = (numberOfGrids) =>{
             }
         }
     }
+
     const displayValues = (arraySource)=>{
         let valueToDisplay = ""
         for(let i =0 ; i<arraySource.length ;i++ ){
@@ -35,6 +36,7 @@ const listOfLotoGrids = (numberOfGrids) =>{
         }
         return valueToDisplay
     }
+
     const createAGrid = (grid, gridSize, min, max) => {
         for(let i = 0 ;i<gridSize;i++){
             addValueToArray(grid, min, max)
@@ -43,8 +45,9 @@ const listOfLotoGrids = (numberOfGrids) =>{
     }
     
     // Create Grids
+const listOfLotoGrids = (numberOfGrids) =>{
     let allLotoGrids = ""
- 
+
     for (let i = 0; i< numberOfGrids; i++){
         // get number
         const numberOfTheGrid = []
@@ -63,4 +66,6 @@ const listOfLotoGrids = (numberOfGrids) =>{
 
     return allLotoGrids
 }
-console.log(listOfLotoGrids(20))
+console.log(listOfLotoGrids(2))
+
+module.exports= {getNumber, addValueToArray, createAGrid}
