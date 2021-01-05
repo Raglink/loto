@@ -1,12 +1,15 @@
 
     // All constants
-    const countNumber = 5
-    const minNumber =1
-    const maxNumber =49
-    
-    const countStar = 1
-    const minStar =1
-    const maxStar =10
+    const numberOfGrids = 4
+
+        // Grid components
+        const countNumber = 5
+        const minNumber =1
+        const maxNumber =49
+        
+        const countStar = 1
+        const minStar =1
+        const maxStar =10
     
     // Functions
     const getNumber = (min, max) => {
@@ -66,6 +69,6 @@ const listOfLotoGrids = (numberOfGrids) =>{
 
     return allLotoGrids
 }
-console.log(listOfLotoGrids(2))
+console.log(listOfLotoGrids(numberOfGrids))
 
 module.exports= {getNumber, addValueToArray, createAGrid}
