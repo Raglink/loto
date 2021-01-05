@@ -1,5 +1,10 @@
 # Loto
 
+## Tech stack
+
+- JS
+- Jest
+
 ## What is Loto app ?
 
 This app generetes lottery grids for French Loto, EuroMillions or others lotteries where numbers are in 2 different boxes .
